@@ -1,0 +1,12 @@
+.heading{
+    text-align: center;
+}
+.connecting{
+    display: flex;
+    flex-direction: column;
+}
+.contact{
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+}

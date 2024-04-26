@@ -40,8 +40,20 @@
     border: none;
     background: linear-gradient(267deg, green 10%, orange 100%);
 }
+.about-skill:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
 .experience{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 10px;
+}
+.experience h2{
+    background: linear-gradient(270deg, orange 50%, purple 90%);
+    background-clip: text;
+    font-size: 50px;
+    font-weight: 600;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
