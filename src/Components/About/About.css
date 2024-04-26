@@ -1,0 +1,47 @@
+.about{
+    margin:25px 70px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.image{
+    border-radius: 5%;
+    box-shadow: 0px 0px 5px white;
+    margin: 5px;
+}
+.about-details{
+    display: flex;
+    gap: 50px;
+}
+.bio{
+    margin: 5px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-weight: 400;
+    font-size: large;
+}
+.about-skills{
+    margin: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.about-skill{
+    display: flex;
+}
+.about-skill h3{
+    min-width: 130px;
+}
+.about-skill hr{
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    background: linear-gradient(267deg, green 10%, orange 100%);
+}
+.experience{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
