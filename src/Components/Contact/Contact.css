@@ -4,9 +4,78 @@
 .connecting{
     display: flex;
     flex-direction: column;
+    padding: 2%;
+    margin: 30px;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+.connecting:hover{
+    box-shadow: 0px 0px 10px gray;
 }
 .contact{
     display: flex;
     flex-direction: row;
     margin: 5px;
+    padding: 5px;
+    font-size: 24px;
+    font-weight: 500;
+}
+.contactDetails{
+    display: flex;
+    gap: 30px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    padding: 4%;
+    border: 2px solid white;
+    margin: 20px;
+    border-radius: 10px;
+    font-size: 24px;
+    font-weight: 500;
+    min-width: 400px;
+}
+.form:hover{
+    box-shadow: 0px 0px 10px gray;
+}
+.form input{
+    width: 300px;
+    height: 40px;
+    border-radius: 6px;
+    background-color: black;
+    border: 0.5px solid white;
+    margin: 5px;
+    color: white;
+    font-size: large;
+    font-weight: 400;
+}
+.form textarea{
+    background-color: black;
+    border: 0.5px solid white;
+    border-radius: 6px;
+    min-height: 100px;
+    margin: 5px 1px 9px 1px;
+    color: white;
+}
+.submit{
+    width: 200px;
+    height: 30px;
+    border: 2px solid white;
+    background-color: black;
+    color: aliceblue;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.submit:hover{
+    transform: scale(1.03);
+    box-shadow: 0px 0px 5px gray;
+}
+.refresh{
+    margin-left: 20px;
+    margin-top: 8px;
+    box-shadow: 0px 0px 5px white;
+    transition: 0.2s;
+}
+.refresh:hover{
+    transform: scale(1.02);
 }

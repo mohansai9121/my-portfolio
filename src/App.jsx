@@ -8,7 +8,7 @@ import Works from "./Components/Works/Works";
 
 const App = () => {
   return (
-    <div>
+    <div style={{ overflow: "scroll" }}>
       <Navbar />
       <Profile />
       <About />
