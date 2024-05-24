@@ -51,7 +51,7 @@ const About = () => {
             </div>
             <hr />
             <div>
-              <h2>5</h2>
+              <h2>6+</h2>
               <p style={{ fontSize: "20px" }}>Basic projects in React</p>
             </div>
           </div>

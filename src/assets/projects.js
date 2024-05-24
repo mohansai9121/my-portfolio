@@ -2,6 +2,8 @@ import ticTacToe from './tic-tac-toe.jpg'
 import todolist from './todolist.jpg'
 import password from './password.jpeg'
 import cryptocoins from './cryptocoins.png'
+import calculator from './calculator.webp'
+import clock from './clock.jpg'
 
 const projects = [
     {
@@ -27,6 +29,18 @@ const projects = [
         name:'Crypto Coins',
         img:cryptocoins,
         url:'https://crypto-coins-bymohansai.netlify.app/'
+    },
+    {
+        sNo:'5',
+        name:'Calculator',
+        img:calculator,
+        url:'https://calculator-by-mohan.netlify.app/'
+    },
+    {
+        sNo:'6',
+        name:'Clock',
+        img:clock,
+        url:'https://mohansai9121.github.io/clock/'
     }
 ]
 
