@@ -14,22 +14,22 @@ const Navbar = () => {
         width="150px"
       />
       <ul className="nav-menu">
-        <li>
+        <li className="navmenu-component">
           <AnchorLink href="#home" className="anchor">
             Home
           </AnchorLink>
         </li>
-        <li>
+        <li className="navmenu-component">
           <AnchorLink href="#about" offset={50} className="anchor">
             About me
           </AnchorLink>
         </li>
-        <li>
+        <li className="navmenu-component">
           <AnchorLink href="#works" offset={50} className="anchor">
             My works
           </AnchorLink>
         </li>
-        <li>
+        <li className="navmenu-component">
           <AnchorLink href="#contact" offset={50} className="anchor">
             Contact
           </AnchorLink>
