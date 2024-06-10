@@ -27,7 +27,7 @@ const Profile = () => {
         </div>
         <div className="resume">
           <a
-            href="https://drive.google.com/file/d/18lRxzKMozE56pYQOi2Eapy-emXc6jfjB/view?usp=sharing"
+            href="https://drive.google.com/file/d/1XEaswogkKddxyaZzoCVOiogPz-SFKmpk/view?usp=drive_link"
             target="_blank"
             style={{ textDecoration: "none", color: "white" }}
           >
