@@ -1,46 +1,46 @@
-.navbar{
-    display: flex;
-    align-items: center;
-    margin: 20px 100px;
-    justify-content: space-between;
+.navbar {
+  display: flex;
+  align-items: center;
+  margin: 20px 100px;
+  justify-content: space-between;
 }
-.navbar img{
-    border-radius: 15px;
+.navbar img {
+  border-radius: 15px;
 }
-.nav-menu{
-    display: flex;
-    list-style: none;
-    align-items: center;
-    gap: 50px;
-    font-size: 20px;
-    padding: 5px;
-    margin: 5px;
+.nav-menu {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 50px;
+  font-size: 20px;
+  padding: 5px;
+  margin: 5px;
 }
-.nav-connect{
-    padding: 20px 40px;
-    border-radius: 50px;
-    background: linear-gradient(267deg, #da7c25 0.36%, #b923e1 102.06%);
-    font-size: 22px;
-    cursor: pointer;
-    transition: 0.5s;
-    margin: 10px;
+.nav-connect {
+  padding: 20px 40px;
+  border-radius: 50px;
+  background: linear-gradient(267deg, #da7c25 0.36%, #b923e1 102.06%);
+  font-size: 22px;
+  cursor: pointer;
+  transition: 0.5s;
+  margin: 10px;
 }
-.nav-connect:hover{
-    transform: scale(1.03);
+.nav-connect:hover {
+  transform: scale(1.03);
 }
-.anchor{
-    text-decoration: none;
-    color: aliceblue;
+.anchor {
+  text-decoration: none;
+  color: aliceblue;
 }
-.navmenu-component{
-    padding: 5px;
-    scale: 1;
+.navmenu-component {
+  padding: 5px;
+  scale: 1;
 }
-.navmenu-component:hover,.navmenu-component:focus{
-    text-shadow: 0px 0px 3px white;
-    background-color: #242424;
-    border-radius: 9px;
-    transition: 0.5s;
-    scale: 1.05;
-
+.navmenu-component:hover,
+.navmenu-component:focus {
+  text-shadow: 0px 0px 1px white;
+  background-color: #242424;
+  border-radius: 9px;
+  transition: 0.5s;
+  scale: 1.05;
 }

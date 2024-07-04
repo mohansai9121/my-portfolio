@@ -46,12 +46,12 @@ const About = () => {
           <br></br>
           <div className="experience">
             <div>
-              <h2>2+</h2>
+              <h2>1.5+</h2>
               <p style={{ fontSize: "20px" }}>Years experience in Python</p>
             </div>
             <hr />
             <div>
-              <h2>6+</h2>
+              <h2>8+</h2>
               <p style={{ fontSize: "20px" }}>Basic projects in React</p>
             </div>
           </div>
