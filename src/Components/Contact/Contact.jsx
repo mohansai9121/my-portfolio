@@ -57,12 +57,12 @@ const Contact = () => {
             <p> mohansaichinthala9121@gmail.com</p>
           </div>
           <div className="contact">
-            <img src={linkedin} alt="linkedin" height={25} width={25} />
+            <img src={linkedin} alt="linkedin" height={25} width={25} />{" "}
             <p>
               <a
                 href="https://www.linkedin.com/in/mohan-sai-chintala-0b309223a/"
                 target="_blank"
-                style={{ color: "white" }}
+                className="location"
               >
                 My LinkedIn Profile
               </a>
@@ -75,20 +75,27 @@ const Contact = () => {
               height={25}
               width={25}
               style={{ backgroundColor: "white" }}
-            />
+            />{" "}
             <p>
               <a
                 href="https://github.com/mohansai9121"
                 target="_blank"
-                style={{ color: "white" }}
+                className="location"
               >
                 GitHub profile
               </a>
             </p>
           </div>
           <div className="contact">
-            <img src={location} alt="location" height={30} width={20} />
-            <p>Guntur, AP, India</p>
+            <img src={location} alt="location" height={30} width={20} />{" "}
+            <a
+              href="https://maps.app.goo.gl/7nuSKZ67vTquBwi66"
+              target="_blank"
+              className="location"
+            >
+              {" "}
+              Guntur, AP, India
+            </a>
           </div>
         </div>
         <div>
