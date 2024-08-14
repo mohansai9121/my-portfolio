@@ -73,7 +73,8 @@
     display: block;
     top: 30px;
     background-color: white;
-    border-radius: 50%;
+    border-radius: 100%;
+    right: 5px;
   }
   .nav-menu {
     flex-direction: column;
@@ -87,6 +88,7 @@
     height: 100%;
     position: fixed;
     right: -350px;
+    padding-top: 30px;
   }
   .navmenu-component {
     padding-left: 100px;

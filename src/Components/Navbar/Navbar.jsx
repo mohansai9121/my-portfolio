@@ -9,14 +9,17 @@ import close from "../../assets/close.png";
 
 const Navbar = () => {
   const [menu, setMenu] = useState("home1");
+  const [closed, setClosed] = useState(true);
   const menuRef = useRef();
 
   const openMenu = () => {
     menuRef.current.style.right = "0";
+    setClosed(false);
   };
 
   const closeMenu = () => {
     menuRef.current.style.right = "-350px";
+    setClosed(true);
   };
 
   return (
@@ -36,15 +39,19 @@ const Navbar = () => {
         className="navMobileOpen"
       />
       <ul ref={menuRef} className="nav-menu">
-        <img
-          onClick={closeMenu}
-          src={close}
-          alt="close"
-          height={40}
-          style={{ backgroundColor: "white" }}
-          width={40}
-          className="navMobileClose"
-        />
+        {!closed ? (
+          <img
+            onClick={closeMenu}
+            src={close}
+            alt="close"
+            height={40}
+            style={{ backgroundColor: "white" }}
+            width={40}
+            className="navMobileClose"
+          />
+        ) : (
+          <></>
+        )}
         <li className="navmenu-component" onClick={() => setMenu("home1")}>
           <AnchorLink href="#home" className="anchor">
             Home
