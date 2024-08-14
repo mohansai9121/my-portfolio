@@ -87,3 +87,46 @@
 .location:focus {
   color: blue;
 }
+@media (max-width: 768px) {
+  .contactDetails {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .connecting {
+    overflow: scroll;
+  }
+  .form {
+    margin: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 300;
+    min-width: 380px;
+  }
+  .contact {
+    margin: 5px;
+    padding: 5px;
+    font-size: 18px;
+    font-weight: 300;
+  }
+  .form input {
+    width: 240px;
+    height: 30px;
+    border-radius: 5px;
+    margin: 5px;
+    color: white;
+    font-size: 15px;
+    font-weight: 300;
+  }
+  .form textarea {
+    border-radius: 5px;
+    min-height: 80px;
+    margin: 5px 10px 8px 1px;
+    color: white;
+  }
+  .submit {
+    width: 150px;
+    height: 30px;
+    border: 1px solid white;
+    transition: 0.3s;
+  }
+}

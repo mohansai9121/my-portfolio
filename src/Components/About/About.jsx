@@ -1,5 +1,5 @@
 //import React from 'react'
-import profile from "../../assets/profile2.jpg";
+import profile from "../../assets/profile3.png";
 import "./About.css";
 
 const About = () => {
@@ -15,9 +15,7 @@ const About = () => {
             src={profile}
             alt="Mohan Sai"
             title="Mohan Sai"
-            className="image"
-            width={310}
-            height={370}
+            className="secondImage"
           />
         </div>
         <div>
@@ -47,12 +45,12 @@ const About = () => {
           <div className="experience">
             <div>
               <h2>1.5+</h2>
-              <p style={{ fontSize: "20px" }}>Years experience in Python</p>
+              <p className="exSubTitle">Years experience in Python</p>
             </div>
             <hr />
             <div>
               <h2>8+</h2>
-              <p style={{ fontSize: "20px" }}>Basic projects in React</p>
+              <p className="exSubTitle">Basic projects in React</p>
             </div>
           </div>
         </div>

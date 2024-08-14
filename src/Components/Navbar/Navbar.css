@@ -25,6 +25,10 @@
   transition: 0.5s;
   margin: 10px;
 }
+.portfolioImage {
+  height: 100px;
+  width: 150px;
+}
 .nav-connect:hover {
   transform: scale(1.03);
 }
@@ -35,6 +39,8 @@
 .navmenu-component {
   padding: 5px;
   scale: 1;
+  display: flex;
+  flex-direction: column;
 }
 .navmenu-component:hover,
 .navmenu-component:focus {
@@ -43,4 +49,55 @@
   border-radius: 9px;
   transition: 0.5s;
   scale: 1.05;
+}
+.navMobileOpen {
+  display: none;
+}
+.navMobileClose {
+  display: none;
+}
+@media (max-width: 768px) {
+  .nav-connect {
+    display: none;
+  }
+  .navbar {
+    margin: 20px 50px;
+  }
+  .navMobileOpen {
+    position: fixed;
+    display: block;
+    right: 10px;
+  }
+  .navMobileClose {
+    position: fixed;
+    display: block;
+    top: 30px;
+    background-color: white;
+    border-radius: 50%;
+  }
+  .nav-menu {
+    flex-direction: column;
+    align-items: start;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    gap: 30px;
+    width: 250px;
+    z-index: 2;
+    transition: right 0.5s;
+    height: 100%;
+    position: fixed;
+    right: -350px;
+  }
+  .navmenu-component {
+    padding-left: 100px;
+  }
+  .navmenu-component:hover {
+    text-shadow: 0px 0px 1px white;
+    transition: 0.5s;
+    scale: 1.05;
+  }
+  .portfolioImage {
+    width: 90px;
+    height: 60px;
+  }
 }

@@ -49,11 +49,11 @@ const Contact = () => {
       <div className="contactDetails">
         <div className="connecting">
           <div className="contact">
-            <img src={phone} alt="call" height={30} width={20} />
+            <img src={phone} alt="call" height={30} width={20} />{" "}
             <p>+91 9121921094</p>
           </div>
           <div className="contact">
-            <img src={mail} alt="mail" height={20} width={30} />
+            <img src={mail} alt="mail" height={20} width={30} />{" "}
             <p> mohansaichinthala9121@gmail.com</p>
           </div>
           <div className="contact">
@@ -129,7 +129,7 @@ const Contact = () => {
             />
             <center>
               <button type="submit" className="submit">
-                Submit
+                Send Message
               </button>
               <img
                 src={refresh}

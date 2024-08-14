@@ -1,47 +1,83 @@
-.profile{
-    display: flex;
+.profile {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.profile h1 {
+  align-items: center;
+  font-weight: 700;
+  font-size: 40px;
+}
+.name {
+  background: linear-gradient(270deg, orange 10%, purple 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.profile-respond {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 500;
+  gap: 25px;
+  margin-bottom: 30px;
+}
+.connect {
+  padding: 15px 30px;
+  border-radius: 50px;
+  background: linear-gradient(270deg, orange 10%, purple 100%);
+  cursor: pointer;
+  transition: 0.5s;
+}
+.resume {
+  padding: 15px 30px;
+  border-radius: 50px;
+  border: 2px solid white;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.connect:hover {
+  transform: scale(1.03);
+  border: 1.5px solid white;
+}
+.mainProfile {
+  width: 300px;
+  height: 300px;
+}
+.resume:hover {
+  transform: scale(1.03);
+  border: 1.5px solid orange;
+}
+@media (max-width: 768px) {
+  .profile {
+    gap: 10px;
+  }
+  .profile h1 {
     align-items: center;
-    flex-direction: column;
-    gap: 20px;
-}
-.profile h1{
-    align-items: center;
-    font-weight: 700;
-    font-size: 40px;
-}
-.name{
-    background: linear-gradient(270deg, orange 10%, purple 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-.profile-respond{
-    display: flex;
-    align-items: center;
-    font-size: 20px;
-    font-weight: 500;
-    gap: 25px;
-    margin-bottom: 30px;
-}
-.connect{
-    padding: 15px 30px;
-    border-radius: 50px;
-    background: linear-gradient(270deg, orange 10%, purple 100%);
-    cursor: pointer;
-    transition: 0.5s;
-}
-.resume{
-    padding: 15px 30px;
-    border-radius: 50px;
-    border: 2px solid white;
-    cursor: pointer;
-    transition: 0.5s;
-}
-.connect:hover{
-    transform: scale(1.03);
-    border:1.5px solid white;
-}
-.resume:hover{
-    transform: scale(1.03);
-    border: 1.5px solid orange;
+    font-weight: 600;
+    font-size: 22px;
+  }
+  .mainProfile {
+    width: 170px;
+    height: 170px;
+  }
+  .profile h2 {
+    font-size: 18px;
+  }
+  .profile h3 {
+    font-size: 12px;
+  }
+  .profile-respond {
+    font-size: 16px;
+    font-weight: 400;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  .connect {
+    padding: 8px 15px;
+  }
+  .resume {
+    padding: 8px 15px;
+  }
 }

@@ -10,9 +10,8 @@ const Profile = () => {
         src={profile}
         alt="Mohan Sai"
         title="Mohan Sai"
-        height="300px"
-        width="300px"
         style={{ borderRadius: "100%" }}
+        className="mainProfile"
       />
       <h1>
         <span className="name">I am Mohan Sai,</span> from Guntur

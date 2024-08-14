@@ -14,13 +14,7 @@ const Works = () => {
           return (
             <div key={index} className="project">
               <a href={project.url} target="_blank">
-                <img
-                  src={project.img}
-                  alt={project.name}
-                  height={200}
-                  width={300}
-                  className="image"
-                />
+                <img src={project.img} alt={project.name} className="image" />
               </a>
               <p>{project.name}</p>
             </div>
