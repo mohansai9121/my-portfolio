@@ -9,6 +9,13 @@
   font-weight: 700;
   font-size: 40px;
 }
+.logos {
+  display: flex;
+}
+.logo {
+  width: 70px;
+  height: 70px;
+}
 .name {
   background: linear-gradient(270deg, orange 10%, purple 100%);
   background-clip: text;
