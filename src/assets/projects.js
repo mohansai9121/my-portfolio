@@ -7,8 +7,22 @@ import clock from "./clock.jpg";
 import boxOffice from "./box-office.jpeg";
 import weather from "./weather.jpg";
 import groupChat from "./group-chat.png";
+import solarsystem from "./solar-system.jpg";
+import gymfluencer from "./gymfluencer.png";
 
 const projects = [
+  {
+    sNo: "10",
+    name: "Solar System",
+    img: solarsystem,
+    url: "https://solar-system-background.netlify.app/",
+  },
+  {
+    sNo: "11",
+    name: "GymFluencer",
+    img: gymfluencer,
+    url: "https://gymfluencer-app.netlify.app/",
+  },
   {
     sNo: "1",
     name: "Group Chat",
