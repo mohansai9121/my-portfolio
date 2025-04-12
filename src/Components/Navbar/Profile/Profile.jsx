@@ -3,6 +3,7 @@ import AnchorLink from "react-anchor-link-smooth-scroll";
 import profile from "../../../assets/profile.jpg";
 import "./Profile.css";
 import Reactlogo from "./Reactlogo";
+import { motion } from "motion/react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Stage } from "@react-three/drei";
 
@@ -18,7 +19,10 @@ const Profile = () => {
             <OrbitControls autoRotate autoRotateSpeed={7} enableZoom={false} />
           </Canvas>
         </div>
-        <img
+        <motion.img
+          initial={{ opacity: 0, scale: 0.6 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1, ease: "easeInOut" }}
           src={profile}
           alt="Mohan Sai"
           title="Mohan Sai"
@@ -38,7 +42,9 @@ const Profile = () => {
         <span className="name">I am Mohan Sai,</span> from Guntur
       </h1>
       <h2>Front-end Developer</h2>
-      <h3>Working on React</h3>
+      <h3>
+        Crafting user-centric web experiences with clean code and modern design
+      </h3>
       <div className="profile-respond">
         <div className="connect">
           <AnchorLink offset={50} href="#contact" className="anchor">

@@ -1,7 +1,9 @@
 //import React from 'react'
 
 import About from "./Components/About/About";
+import Education from "./Components/About/Education/Education";
 import Contact from "./Components/Contact/Contact";
+import Stepper from "./Components/Motion/Stepper";
 import Navbar from "./Components/Navbar/Navbar";
 import Profile from "./Components/Navbar/Profile/Profile";
 import Works from "./Components/Works/Works";

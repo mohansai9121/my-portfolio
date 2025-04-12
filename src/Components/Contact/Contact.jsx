@@ -60,7 +60,7 @@ const Contact = () => {
             <img src={linkedin} alt="linkedin" height={25} width={25} />{" "}
             <p>
               <a
-                href="https://www.linkedin.com/in/mohan-sai-chintala-0b309223a/"
+                href="https://www.linkedin.com/in/mohan-sai-chintala-556b2b358/"
                 target="_blank"
                 className="location"
               >

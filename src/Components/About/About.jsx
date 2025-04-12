@@ -1,8 +1,13 @@
 //import React from 'react'
 import profile from "../../assets/profile3.png";
+import { motion } from "motion/react";
 import "./About.css";
+import { useState } from "react";
+import Education from "./Education/Education";
 
 const About = () => {
+  const [flipped, setFlipped] = useState(false);
+
   return (
     <div className="about" id="about">
       <div>
@@ -10,49 +15,31 @@ const About = () => {
       </div>
       <br></br>
       <div className="about-details">
+        <motion.div
+          className="card"
+          onClick={() => setFlipped(!flipped)}
+          animate={{ rotateY: flipped ? 180 : 0 }}
+          transition={{ duration: 0.8 }}
+        >
+          <div className="card-face card-front">
+            <img src={profile} alt="Profile image" className="secondImage" />
+          </div>
+          <div className="card-face card-back">
+            <div className="profile-back">
+              <br /><br/>
+              <h3>Front-end Developer</h3>
+              <br/><br/><br/>
+              <p style={{width:"85%"}}>
+                I&apos;m a frontend developer with a passion for building sleek,
+                interactive web experiences. I specialize in React and love
+                crafting clean, maintainable code. Currently focused on bringing
+                thoughtful UI/UX to life with performance in mind.
+              </p>
+            </div>
+          </div>
+        </motion.div>
         <div>
-          <img
-            src={profile}
-            alt="Mohan Sai"
-            title="Mohan Sai"
-            className="secondImage"
-          />
-        </div>
-        <div>
-          <div className="bio">
-            <p>Aspiring front-end developer</p>
-            <p>
-              My passion for frontend development is not only reflected in my
-              extensive experience but also in the enthusiasm and dedication I
-              bring to each project
-            </p>
-          </div>
-          <div className="about-skills">
-            <div className="about-skill">
-              <h3>HTML & CSS</h3>
-              <hr width="70%" />
-            </div>
-            <div className="about-skill">
-              <h3>JavaScript</h3>
-              <hr width="60%" />
-            </div>
-            <div className="about-skill">
-              <h3>Python</h3>
-              <hr width="70%" />
-            </div>
-          </div>
-          <br></br>
-          <div className="experience">
-            <div>
-              <h2>1.5+</h2>
-              <p className="exSubTitle">Years experience in Python</p>
-            </div>
-            <hr />
-            <div>
-              <h2>8+</h2>
-              <p className="exSubTitle">Basic projects in React</p>
-            </div>
-          </div>
+          <Education/>
         </div>
       </div>
     </div>
