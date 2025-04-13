@@ -1,9 +1,9 @@
-//import React from 'react'
 import profile from "../../assets/profile3.png";
 import { motion } from "motion/react";
 import "./About.css";
 import { useState } from "react";
 import Education from "./Education/Education";
+import TapHere from "../../LottieComponents/TapHere";
 
 const About = () => {
   const [flipped, setFlipped] = useState(false);
@@ -24,12 +24,18 @@ const About = () => {
           <div className="card-face card-front">
             <img src={profile} alt="Profile image" className="secondImage" />
           </div>
+          <div className="tap-animation">
+            <TapHere />
+          </div>
           <div className="card-face card-back">
             <div className="profile-back">
-              <br /><br/>
+              <br />
+              <br />
               <h3>Front-end Developer</h3>
-              <br/><br/><br/>
-              <p style={{width:"85%"}}>
+              <br />
+              <br />
+              <br />
+              <p style={{ width: "85%" }}>
                 I&apos;m a frontend developer with a passion for building sleek,
                 interactive web experiences. I specialize in React and love
                 crafting clean, maintainable code. Currently focused on bringing
@@ -39,7 +45,7 @@ const About = () => {
           </div>
         </motion.div>
         <div>
-          <Education/>
+          <Education />
         </div>
       </div>
     </div>

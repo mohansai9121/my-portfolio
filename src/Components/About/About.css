@@ -22,12 +22,16 @@
   height: 100%;
   backface-visibility: hidden;
 }
+.tap-animation {
+  position: absolute;
+  bottom: -170px;
+}
 .secondImage {
   width: 100%;
   height: 100%;
   border-radius: 5%;
 }
-.card-back{
+.card-back {
   transform: rotateY(180deg);
 }
 .profile-back {

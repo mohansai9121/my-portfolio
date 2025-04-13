@@ -1,0 +1,54 @@
+.wrapper {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .toggle-btn {
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background-color: #764ba2;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .card-container {
+    position: relative;
+    width: 80%;
+    margin: auto;
+    min-height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease;
+  }
+  
+  .stack-view .card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+  }
+  
+  .grid-view {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 20px;
+  }
+  
+  .card {
+    width: 100px;
+    height: 140px;
+    background: linear-gradient(to right, #667eea, #764ba2);
+    color: white;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+  }
+  
