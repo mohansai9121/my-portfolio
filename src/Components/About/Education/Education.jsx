@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
 import { useState } from "react";
-import "./Education.css"
+import "./Education.css";
 import Rvrjc from "./Rvrjc";
 import Inter from "./Inter";
 import Narayana from "./Narayana";
@@ -29,10 +29,32 @@ const Education = () => {
           </motion.div>
         ))}
       </div>
-      <motion.div initial={{y:30, opacity:0}} animate={{y:0, opacity:1}} exit={{y:-50, opacity:0}} transition={{duration:0.8}}>
-        {currentStep===0?<><Rvrjc/></>:currentStep===1?<><Inter/></>:<><Narayana/></>}
+      <motion.div
+        initial={{ y: 30, scale: 0.5, opacity: 0 }}
+        whileInView={{ y: 0, scale: 1, opacity: 1 }}
+        exit={{ y: -50, opacity: 0 }}
+        transition={{ duration: 0.8 }}
+      >
+        {currentStep === 0 ? (
+          <>
+            <Rvrjc />
+          </>
+        ) : currentStep === 1 ? (
+          <>
+            <Inter />
+          </>
+        ) : (
+          <>
+            <Narayana />
+          </>
+        )}
       </motion.div>
-      <button onClick={()=>setCurrentStep((prev)=>Math.min(prev+1,2))} className="next" >Next</button>
+      <button
+        onClick={() => setCurrentStep((prev) => Math.min(prev + 1, 2))}
+        className="next"
+      >
+        Next
+      </button>
     </div>
   );
 };

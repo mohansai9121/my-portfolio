@@ -14,3 +14,23 @@
 .details p {
   width: 680px;
 }
+@media (max-width: 768px) {
+  .rvrjc-layout {
+    height: 320px;
+    width: 94vw;
+    padding-top: 30px;
+  }
+  .details {
+    justify-content: space-between;
+    gap: 25px;
+    margin-bottom: 30px;
+    margin-top: 50px;
+  }
+  .details p {
+    font-size: 11px;
+    width: 92%;
+  }
+  .details h2 {
+    font-size: 14px;
+  }
+}

@@ -50,3 +50,42 @@
   color: #ccc;
   margin-top: 8px;
 }
+
+@media (max-width: 768px) {
+  .skills-layout {
+    margin-top: 30px;
+  }
+  .skills-title {
+    font-size: 20px;
+    margin-bottom: 100px;
+    margin-top: 15px;
+  }
+  .skills-title .accent {
+    font-size: 30px;
+  }
+  .skills-grid {
+    gap: 12px;
+  }
+  .scroll-progress-bar {
+    top: 110px;
+    left: 49vw;
+    width: 3px;
+    height: 170%;
+    transform-origin: top;
+  }
+  .skill-card {
+    background: linear-gradient(145deg, #1f1f1f, #2c2c2c);
+    padding: 18px;
+    width: 25vw;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    /*transition: transform 0.3s ease;
+    will-change: transform;*/
+  }
+  .skill-card h3 {
+    font-size: 16px;
+  }
+  .skill-card p {
+    margin-top: 4px;
+    font-size: 12px;
+  }
+}

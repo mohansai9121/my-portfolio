@@ -11,14 +11,6 @@ const Profile = () => {
   return (
     <div className="profile">
       <div className="logos">
-        <div className="logo">
-          <Canvas>
-            <Stage environment="city" intensity={1}>
-              <Reactlogo />
-            </Stage>
-            <OrbitControls autoRotate autoRotateSpeed={7} enableZoom={false} />
-          </Canvas>
-        </div>
         <motion.img
           initial={{ opacity: 0, scale: 0.6 }}
           whileInView={{ opacity: 1, scale: 1 }}
@@ -29,14 +21,6 @@ const Profile = () => {
           style={{ borderRadius: "100%" }}
           className="mainProfile"
         />
-        <div className="logo">
-          <Canvas>
-            <Stage environment="city" intensity={1}>
-              <Reactlogo />
-            </Stage>
-            <OrbitControls autoRotate autoRotateSpeed={7} enableZoom={false} />
-          </Canvas>
-        </div>
       </div>
       <h1>
         <span className="name">I am Mohan Sai,</span> from Guntur

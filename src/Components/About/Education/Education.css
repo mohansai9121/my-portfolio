@@ -30,6 +30,28 @@
   cursor: pointer;
   right: 80px;
 }
-.next:hover{
-    transform: scale(1.1);
+.next:hover {
+  transform: scale(1.1);
+}
+@media (max-width: 768px) {
+  .education-layout {
+    width: 96vw;
+    height: 360px;
+  }
+  .steppers-layout {
+    margin-top: 10px;
+    gap: 40px;
+  }
+  .stepper {
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin-top: 12px;
+    font-size: 12px;
+  }
+  .next {
+    bottom: 20px;
+    font-size: 14px;
+    right: 40px;
+  }
 }
