@@ -2,6 +2,7 @@
 
 import About from "./Components/About/About";
 import Contact from "./Components/Contact/Contact";
+//import HorizontalScroll from "./Components/Motion/HorizontalScroll";
 import Navbar from "./Components/Navbar/Navbar";
 import Profile from "./Components/Navbar/Profile/Profile";
 import Skills from "./Components/Skills/Skills";
@@ -13,7 +14,7 @@ const App = () => {
       <Navbar />
       <Profile />
       <About />
-      <Skills/>
+      <Skills />
       <Works />
       <Contact />
     </div>

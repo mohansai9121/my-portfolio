@@ -1,0 +1,25 @@
+/*.horizontal-scroll-container {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.cards-row {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  will-change: transform;
+}
+
+.card {
+  min-width: 80vw;
+  height: 60vh;
+  margin: 0 10px;
+  background-color: #f4f4f4;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}*/

@@ -2,10 +2,10 @@
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import profile from "../../../assets/profile.jpg";
 import "./Profile.css";
-import Reactlogo from "./Reactlogo";
+//import Reactlogo from "./Reactlogo";
 import { motion } from "motion/react";
-import { Canvas } from "@react-three/fiber";
-import { OrbitControls, Stage } from "@react-three/drei";
+//import { Canvas } from "@react-three/fiber";
+//import { OrbitControls, Stage } from "@react-three/drei";
 
 const Profile = () => {
   return (
@@ -37,7 +37,7 @@ const Profile = () => {
         </div>
         <div className="resume">
           <a
-            href="https://drive.google.com/file/d/1frapC9SB3kBtB6Xj3HsDJnp7rvjTMRkc/view?usp=sharing"
+            href="https://drive.google.com/file/d/18gLBUr1UkX_8npStj494b30XPujuYgF9/view?usp=drive_link"
             target="_blank"
             style={{ textDecoration: "none", color: "white" }}
           >
