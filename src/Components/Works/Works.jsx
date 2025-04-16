@@ -3,6 +3,7 @@ import "./Works.css";
 import { useLayoutEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { motion } from "framer-motion";
 import { fullStackApps, basicApps, games, apps3d } from "../../assets/projects";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -52,12 +53,18 @@ const Works = () => {
           {/*<h2>Games</h2>*/}
           <div className="games">
             {games.map((game, id) => (
-              <div className="project" key={id}>
+              <motion.div
+                className="project"
+                key={id}
+                initial={{ opacity: 0, scale: 0.7 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.6, delay: 0.1, ease: "easeOut" }}
+              >
                 <a href={game.url} target="_blank">
                   <img src={game.img} alt={game.name} className="image" />
                 </a>
                 <p>{game.name}</p>
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>
@@ -65,12 +72,18 @@ const Works = () => {
           {/*<h2>3-d Apps</h2>*/}
           <div className="apps3d">
             {apps3d.map((app, id) => (
-              <div key={id} className="project">
+              <motion.div
+                key={id}
+                className="project"
+                initial={{ opacity: 0, scale: 0.7 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.6, delay: 0.15, ease: "easeOut" }}
+              >
                 <a href={app.url} target="_blank">
                   <img src={app.img} alt={app.name} className="image" />
                 </a>
                 <p>{app.name}</p>
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>
@@ -78,12 +91,18 @@ const Works = () => {
           {/*<h2>Full Stack Applications</h2>*/}
           <div className="fullstackApps">
             {fullStackApps.map((fsapp, id) => (
-              <div key={id} className="project">
+              <motion.div
+                key={id}
+                className="project"
+                initial={{ opacity: 0, scale: 0.7 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
+              >
                 <a href={fsapp.url} target="_blank">
                   <img src={fsapp.img} alt={fsapp.name} className="image" />
                 </a>
                 <p>{fsapp.name}</p>
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>
@@ -93,7 +112,13 @@ const Works = () => {
         <div ref={containerRef}>
           <div ref={rowRef} className="basicApps">
             {basicApps.map((basicApp, id) => (
-              <div key={id} className="project">
+              <motion.div
+                key={id}
+                className="project"
+                initial={{ x: (10 - id) * 2 }}
+                whileInView={{ x: 0 }}
+                transition={{ duration: 0.3, delay: id * 0.05 }}
+              >
                 <a href={basicApp.url} target="_blank">
                   <img
                     src={basicApp.img}
@@ -102,7 +127,7 @@ const Works = () => {
                   />
                 </a>
                 <p>{basicApp.name}</p>
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>
